@@ -1,0 +1,14 @@
+{
+  "name": "image-studio",
+  "description": "image-studio: generate and edit images in Claude Code with the Codex CLI on your ChatGPT plan",
+  "owner": {
+    "name": "Akshay Laghate"
+  },
+  "plugins": [
+    {
+      "name": "image-studio",
+      "source": "./",
+      "description": "Generate and edit images in Claude Code with the Codex CLI on your ChatGPT plan: no API key, a live placeholder while it works, and the picture right in the chat"
+    }
+  ]
+}

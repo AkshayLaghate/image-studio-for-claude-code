@@ -1,0 +1,59 @@
+{
+  "name": "image-studio",
+  "version": "0.4.0",
+  "description": "Generate and edit images in Claude Code with the Codex CLI on your ChatGPT plan: no API key, a live placeholder while it works, and the picture right in the chat",
+  "author": {
+    "name": "Akshay Laghate"
+  },
+  "homepage": "https://github.com/AkshayLaghate/image-studio-for-claude-code",
+  "repository": "https://github.com/AkshayLaghate/image-studio-for-claude-code",
+  "license": "MIT",
+  "keywords": [
+    "image",
+    "image-generation",
+    "image-editing",
+    "codex",
+    "chatgpt",
+    "gpt-image",
+    "mod"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "useWithoutAsking": {
+      "type": "boolean",
+      "title": "Let Claude use it unasked",
+      "description": "When on, Claude may generate images on its own when a task needs one (a hero image, a sprite, an icon). When off, only when you ask.",
+      "default": true
+    },
+    "reasoningEffort": {
+      "type": "string",
+      "title": "Codex reasoning effort",
+      "description": "How hard the Codex agent thinks before calling the image tool: low (fastest), minimal, medium or high. Image quality is unaffected.",
+      "default": "low"
+    },
+    "outputDir": {
+      "type": "string",
+      "title": "Output folder",
+      "description": "Where new images are saved when no path is given, relative to the session's working directory",
+      "default": "generated-images"
+    },
+    "timeoutMinutes": {
+      "type": "number",
+      "title": "Timeout (minutes)",
+      "description": "How long one image may take before Codex is stopped",
+      "default": 10
+    },
+    "codexPath": {
+      "type": "string",
+      "title": "Codex executable",
+      "description": "Full path to codex if it is not found automatically (leave empty to search PATH)",
+      "default": ""
+    },
+    "nodePath": {
+      "type": "string",
+      "title": "Node executable",
+      "description": "Node 18+ used to run the bundled helper (leave as node to search PATH)",
+      "default": "node"
+    }
+  }
+}

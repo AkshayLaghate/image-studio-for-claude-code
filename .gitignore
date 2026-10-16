@@ -1,0 +1,8 @@
+# Written by Claude Code when the mod is loaded from this folder
+.claude-plugin/types/
+/tsconfig.json
+
+node_modules/
+generated-images/
+.DS_Store
+Thumbs.db
